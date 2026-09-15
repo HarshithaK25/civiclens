@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" fill="none">
+  <g filter="url(#glow)">
+    <rect x="6" y="8" width="32" height="32" rx="10" fill="url(#lensGrad)"/>
+    <circle cx="22" cy="24" r="7" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <circle cx="22" cy="24" r="2.5" fill="#38BDF8"/>
+    <path d="M22 11V15M22 33V37M9 24H13M31 24H35" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <text x="48" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5px">Civic<tspan fill="#38BDF8">Lens</tspan></text>
+  <defs>
+    <linearGradient id="lensGrad" x1="6" y1="8" x2="38" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0284C7"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="2" width="44" height="44" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+</svg>

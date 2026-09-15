@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-container":"#06b6d4","on-primary-fixed-variant":"#004e5c","on-surface-variant":"#bcc9cd","surface-container-highest":"#2e3446","surface-tint":"#4cd7f6","surface-bright":"#32394b","tertiary-fixed-dim":"#4edea3","on-error-container":"#ffdad6","on-error":"#690005","surface-container-low":"#141b2c","background":"#0c1323","outline":"#869397","tertiary-container":"#1bbd85","surface-container":"#181f30","on-secondary-fixed":"#00174b","outline-variant":"#3d494c","on-secondary-container":"#cdd7ff","secondary":"#b4c5ff","on-tertiary-fixed-variant":"#005236","on-tertiary-container":"#00452e","tertiary":"#4edea3","error":"#ffb4ab","tertiary-fixed":"#6ffbbe","on-primary":"#003640","surface-container-high":"#232a3b","error-container":"#93000a","surface-container-lowest":"#070e1e","on-surface":"#dce2f9","secondary-container":"#0053db","on-tertiary":"#003824","primary-fixed":"#acedff","primary-fixed-dim":"#4cd7f6","surface":"#0c1323","primary":"#4cd7f6","inverse-primary":"#00687a","secondary-fixed":"#dbe1ff","on-primary-container":"#00424f","on-background":"#dce2f9","secondary-fixed-dim":"#b4c5ff","surface-variant":"#2e3446","on-secondary":"#002a78","surface-dim":"#0c1323","inverse-surface":"#dce2f9","inverse-on-surface":"#293041","on-secondary-fixed-variant":"#003ea8","on-primary-fixed":"#001f26","on-tertiary-fixed":"#002113"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","margin-sm":"1rem","margin-lg":"3rem","space-sm":"0.5rem","margin":"1.5rem","gutter-sm":"0.75rem","gutter-lg":"2rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1.5rem"},"fontFamily":{"body-sm":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.45)]"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 rounded-full bg-primary/20 blur-md pointer-events-none"></div><img alt="CivicLens Logo" class="relative h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XoDpZcQdvkXVfbzW-2_UKbXTAto5xMU2ez96ypjse2ccEcHiUEcS0ljRud_P3wD_DL-G21WMean9fUffg5nSyyZMOSvSqaEUNFbF_nBhFyr1i9l0OxplNrWxjq69Wp3XQlhJeoWvQ1M9Feudqo25A2yRgoQ2D_X95N0porLNeosLk9mkfQwCBuhrJUd-VzRRFWowd-5vlaQ-H8PNlWmK-eQwGaEtFFvKdkqij6A_1BxMi7GzCikTREvKKa"/></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">CivicLens</span><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase leading-none mt-1">Public Intelligence</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-lowest" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm text-label-md rounded-lg shadow-[0_0_12px_rgba(6,182,212,0.3)]"><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="dashboard" href="#">Dashboard</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="civic-map" href="#">Civic Map</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-headline-sm text-label-md rounded-lg shadow-[0_0_12px_rgba(6,182,212,0.3)]" data-path="report-an-issue" href="#">Report an Issue</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="community" href="#">Community</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="admin-center" href="#">Admin Center</a></nav></div><div class="hidden md:flex flex-1 max-w-lg items-center px-space-md py-space-xs bg-surface-container-lowest rounded-lg"><span class="material-symbols-outlined text-outline text-[18px] mr-space-sm">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search issues, locations or categories (e.g. Koramangala, Streetlight)..." type="text"/></div><div class="flex items-center gap-space-md shrink-0"><button aria-label="Toggle theme" class="hidden sm:flex p-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><div class="relative"><button aria-label="Notifications" class="relative p-space-xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span></button></div><div class="flex items-center gap-space-sm pl-space-sm border-l border-outline-variant"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md text-on-surface">Aarav Sharma</span><span class="px-1.5 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-[10px] leading-tight flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Score: 87</span></div><span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-none">Civic Champion</span></div></div></div></div></header><main class="w-full pt-20 pb-20 md:pb-12 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-margin-sm md:px-margin-lg py-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Direct Municipal Telemetry Dispatch
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Report a Civic Issue</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Help your community turn a problem into prioritized civic action in 3 simple steps.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-sm rounded-xl self-start md:self-auto shadow-md">
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Citizen Impact Weight</span>
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Tier 1 • Trusted Reporter</span>
+</div>
+</div>
+</div>
+<!-- Stepper Navigation Bar -->
+<div class="relative bg-surface-container-low rounded-2xl p-space-md mb-space-xl shadow-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md relative z-10">
+<!-- Step 1 Trigger -->
+<button class="group flex items-center gap-space-md text-left p-space-sm rounded-xl transition-all duration-300 bg-surface-container-high/90 shadow-md" id="stepTab1" onclick="switchStep(1)">
+<div class="step-badge flex items-center justify-center w-10 h-10 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm shrink-0 shadow-lg">
+            1
+          </div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm text-primary uppercase tracking-wider">Step 01</span>
+<span class="block font-headline-sm text-headline-sm text-on-surface truncate">What Happened?</span>
+</div>
+</button>
+<!-- Step 2 Trigger -->
+<button class="group flex items-center gap-space-md text-left p-space-sm rounded-xl transition-all duration-300 hover:bg-surface-container-high/40" id="stepTab2" onclick="switchStep(2)">
+<div class="step-badge flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-highest text-on-surface-variant font-headline-sm text-headline-sm shrink-0">
+            2
+          </div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Step 02</span>
+<span class="block font-headline-sm text-headline-sm text-on-surface-variant truncate">Location &amp; Map</span>
+</div>
+</button>
+<!-- Step 3 Trigger -->
+<button class="group flex items-center gap-space-md text-left p-space-sm rounded-xl transition-all duration-300 hover:bg-surface-container-high/40" id="stepTab3" onclick="switchStep(3)">
+<div class="step-badge flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-highest text-on-surface-variant font-headline-sm text-headline-sm shrink-0">
+            3
+          </div>
+<div class="min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Step 03</span>
+<span class="block font-headline-sm text-headline-sm text-on-surface-variant truncate">Evidence &amp; Submit</span>
+</div>
+</button>
+</div>
+<!-- Linear progress bar underneath -->
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-space-md overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500 rounded-full" id="stepProgressBar" style="width: 33.33%;"></div>
+</div>
+</div>
+<!-- Main Workspace Grid: Flow on Left, Live Telemetry on Right -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Flow Container -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- STEP 1 CONTENT -->
+<section class="flex flex-col gap-space-lg" id="step1Container">
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-lg flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Issue Details &amp; Classification</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Classify the incident to trigger automatic municipal department routing.</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">Required</span>
+</div>
+<!-- Title input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="issueTitle">
+<span>Issue Title</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">Be specific and descriptive</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl px-space-md py-space-sm pl-11 focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="issueTitle" placeholder="e.g. Broken streetlight causing unsafe junction at night" type="text" value="Broken streetlight causing unsafe junction at night"/>
+<span class="material-symbols-outlined text-outline absolute left-3 top-2.5 text-[20px]">edit_note</span>
+</div>
+</div>
+<!-- Categories Grid -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Select Civic Category</span>
+<span class="text-primary font-label-sm text-label-sm">Routing: Electrical &amp; Public Infrastructure</span>
+</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm" id="categorySelector">
+<!-- Option 1 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Pothole')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">car_crash</span>
+<span class="font-label-md text-label-md text-on-surface">Pothole</span>
+</button>
+<!-- Option 2 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Garbage Overflow')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">delete_sweep</span>
+<span class="font-label-md text-label-md text-on-surface">Garbage Overflow</span>
+</button>
+<!-- Option 3: ACTIVE -->
+<button class="cat-pill active flex items-center gap-space-sm p-space-sm rounded-xl bg-primary-container text-on-primary-container text-left transition-all shadow-md" onclick="selectCategory(this, 'Streetlight Outage')" type="button">
+<span class="material-symbols-outlined text-on-primary-container text-[22px]">light</span>
+<span class="font-label-md text-label-md font-semibold">Streetlight Outage</span>
+</button>
+<!-- Option 4 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Water Leakage')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">water_drop</span>
+<span class="font-label-md text-label-md text-on-surface">Water Leakage</span>
+</button>
+<!-- Option 5 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Traffic Signal Fault')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">traffic</span>
+<span class="font-label-md text-label-md text-on-surface">Traffic Signal</span>
+</button>
+<!-- Option 6 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Road Damage')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">alt_route</span>
+<span class="font-label-md text-label-md text-on-surface">Road Damage</span>
+</button>
+<!-- Option 7 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Public Safety Hazard')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">warning</span>
+<span class="font-label-md text-label-md text-on-surface">Safety Hazard</span>
+</button>
+<!-- Option 8 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Drainage Overflow')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">waves</span>
+<span class="font-label-md text-label-md text-on-surface">Drainage Overflow</span>
+</button>
+<!-- Option 9 -->
+<button class="cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high" onclick="selectCategory(this, 'Other Civic Issue')" type="button">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">more_horiz</span>
+<span class="font-label-md text-label-md text-on-surface">Other</span>
+</button>
+</div>
+</div>
+<!-- Severity Selector -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface">Severity &amp; Public Urgency</label>
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-space-sm" id="severitySelector">
+<!-- Low -->
+<button class="sev-pill p-space-sm rounded-xl bg-surface-container text-left flex flex-col gap-1 transition-all hover:bg-surface-container-high" onclick="selectSeverity(this, 'Low', 25)" type="button">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md text-on-surface">Low</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Minor cosmetic issue</span>
+</button>
+<!-- Medium -->
+<button class="sev-pill p-space-sm rounded-xl bg-surface-container text-left flex flex-col gap-1 transition-all hover:bg-surface-container-high" onclick="selectSeverity(this, 'Medium', 50)" type="button">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface">Medium</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Regular inconvenience</span>
+</button>
+<!-- High: ACTIVE -->
+<button class="sev-pill active p-space-sm rounded-xl bg-primary/20 text-on-surface text-left flex flex-col gap-1 transition-all shadow-md" onclick="selectSeverity(this, 'High', 76)" type="button">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md font-semibold text-primary">High</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Direct safety concern</span>
+</button>
+<!-- Critical -->
+<button class="sev-pill p-space-sm rounded-xl bg-surface-container text-left flex flex-col gap-1 transition-all hover:bg-surface-container-high" onclick="selectSeverity(this, 'Critical', 94)" type="button">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-error">Critical</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediate active danger</span>
+</button>
+</div>
+</div>
+<div class="flex justify-end pt-space-sm">
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm bg-primary text-on-primary rounded-xl font-headline-sm text-headline-sm hover:brightness-110 shadow-lg transition-transform active:scale-95" onclick="switchStep(2)" type="button">
+<span>Continue to Location</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- STEP 2 CONTENT -->
+<section class="hidden flex-col gap-space-lg" id="step2Container">
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-lg flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Where Is the Incident?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Accurate geospatial data dispatches crews to the exact physical coordinates.</p>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-secondary-container text-on-secondary-container hover:brightness-110 transition-colors font-label-md text-label-md shadow-md" onclick="autoLocate()" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+<span>Use Current Location</span>
+</button>
+</div>
+<!-- GPS Fill Indicator -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">pin_drop</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Captured Telemetry Coordinates</span>
+<p class="font-headline-sm text-headline-sm text-on-surface" id="coordDisplay">12.9352° N, 77.6245° E</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-tertiary/15 text-tertiary font-label-sm text-label-sm self-start sm:self-auto">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>GPS Accuracy: ±2.4 meters</span>
+</div>
+</div>
+<!-- Street Address & Landmark -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="streetAddress">Street Address</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl px-space-md py-space-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="streetAddress" type="text" value="80 Feet Rd, 4th Block, Koramangala"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="landmark">Prominent Landmark</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-xl px-space-md py-space-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="landmark" type="text" value="Opposite Sony World Signal, near Cafe Coffee Day"/>
+</div>
+</div>
+<!-- Interactive Mini-Map Pin Locator -->
+<div class="relative w-full h-80 rounded-2xl overflow-hidden shadow-inner group">
+<div class="w-full h-full bg-cover bg-center" data-location="Koramangala 4th Block Bangalore India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwoJB9UPl_tppxlC2Sm16NwKMyjk33VU2AJHAkz17VoYzxJCAj235xVwPyDiU4dEdiHur4iIknPkkS8xM7cp6v9EXmYMeRqcyt_dJjuKHaJ5-WhPVIjFhMHp7ARRbjQN7AgrYCBzsSJXwXV5TZ9S-BQ07bSdh47iqjbx6HyWclRxfQiUrdtY7OlmduwlQL4VoHlroBGG7D0cQDKX-ANQcPTwvvL5_WS_idw2brSm46aEQYW1wcaQTR1w');"></div>
+<!-- Draggable Crosshair Overlay -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+<div class="relative flex items-center justify-center">
+<!-- Pulse Ring -->
+<div class="absolute w-24 h-24 rounded-full bg-primary/20 animate-ping"></div>
+<div class="absolute w-12 h-12 rounded-full bg-primary/30 backdrop-blur-xs"></div>
+<!-- Center crosshair marker -->
+<div class="relative flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[38px] drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="mt-1 px-space-sm py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm shadow-md whitespace-nowrap">
+                      Pinned Target: Ward 151
+                    </span>
+</div>
+</div>
+</div>
+<!-- Map Control Overlay -->
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between p-space-sm rounded-xl bg-surface-container-high/90 backdrop-blur-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">touch_app</span>
+<span class="font-body-sm text-body-sm text-on-surface">Click anywhere on the map or drag to calibrate pinpoint accuracy</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+                  Recenter Map
+                </button>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container text-on-surface rounded-xl font-headline-sm text-headline-sm hover:bg-surface-container-high transition-colors" onclick="switchStep(1)" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm bg-primary text-on-primary rounded-xl font-headline-sm text-headline-sm hover:brightness-110 shadow-lg transition-transform active:scale-95" onclick="switchStep(3)" type="button">
+<span>Continue to Evidence</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- STEP 3 CONTENT -->
+<section class="hidden flex-col gap-space-lg" id="step3Container">
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-lg flex flex-col gap-space-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Evidence &amp; Automated Verification</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Upload visual proof. Our edge AI models instantly extract diagnostics to accelerate validation.</p>
+</div>
+<!-- Upload Zone & File Preview Card -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Drag & drop area -->
+<div class="md:col-span-6 flex flex-col items-center justify-center p-space-lg rounded-2xl bg-surface-container-lowest text-center cursor-pointer hover:bg-surface-container-high/40 transition-colors">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-space-sm text-primary">
+<span class="material-symbols-outlined text-[32px]">add_photo_alternate</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Drag &amp; Drop Visual Proof</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-xs">Supports JPG, PNG, WEBP with embedded EXIF location metadata up to 25MB.</p>
+<button class="mt-space-md px-space-md py-space-xs rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" type="button">
+                  Browse Storage
+                </button>
+</div>
+<!-- Uploaded Preview Card -->
+<div class="md:col-span-6 bg-surface-container rounded-2xl p-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="relative w-full h-40 rounded-xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A nighttime photograph of a cracked municipal streetlight pole with broken glass housing on an urban street corner in Koramangala Bangalore, cast in soft cyan and dark navy shadows with neon civic ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBz_ZDB5Rp6kDPLVKEH7M6BhJ1Ojz9mkF7Uryt9XaloQVonVyoivPzgrJaxe-uIn-bOJ6YlQ9Il4K9na24rcH8Eh2IDlkyY_bcbnGwNeZM2Rmy5fnv9NXuB-ON6kh4tzxfgagFhzdpCx5hTwXMNOLutZTjHA3arPYVBVrpYGJEPl36M3p0-ppPVVGEUQZGJHUyo34NlxeZULsEHp8OcZcV2HY7Rr7mNohS43tBqtGNo7wAkMjCwXQyIw"/>
+<div class="absolute top-2 right-2 px-space-xs py-1 rounded bg-surface/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>EXIF Match</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface block truncate">streetlight_damage_night.jpg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2.4 MB • 4032 x 3024</span>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+<!-- AI Detection Tag Pill -->
+<div class="mt-space-sm p-space-sm rounded-xl bg-surface-container-highest flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">neurology</span>
+<div class="text-left">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold block tracking-wider">Vision Engine 4.2</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-tight">
+                      ✓ Streetlight &amp; Electrical Pole identified with <strong class="text-primary font-semibold">96% confidence</strong>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Priority Engine Preview Box -->
+<div class="bg-surface-container-high rounded-2xl p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-lg shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-20 h-20 shrink-0 flex items-center justify-center">
+<!-- SVG Circular Score Gauge -->
+<svg class="w-20 h-20 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-lowest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary transition-all duration-1000" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="76, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="priorityScoreVal">76</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase">/100</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Calculated Initial Priority Score</span>
+<span class="px-space-xs py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">High Urgency</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mt-1">
+                    Weighted algorithmic score based on night visibility danger index, traffic density data for Koramangala 4th Block, and verified image evidence.
+                  </p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 text-right">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+                  Will boost as neighbors support
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">SLA Target: &lt; 24h Resolution</span>
+</div>
+</div>
+<!-- Bottom Actions -->
+<div class="flex items-center justify-between pt-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container text-on-surface rounded-xl font-headline-sm text-headline-sm hover:bg-surface-container-high transition-colors" onclick="switchStep(2)" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back</span>
+</button>
+<!-- FINAL PRIMARY ACTION -->
+<button class="flex items-center gap-space-sm px-space-xl py-space-md bg-gradient-to-r from-primary-container via-primary to-secondary-container text-on-primary font-headline-sm text-headline-sm rounded-xl hover:brightness-110 shadow-xl transition-all transform active:scale-95" onclick="showConfirmationModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">send</span>
+<span>SUBMIT CIVIC REPORT</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Live Telemetry & Advocacy Tracker (Right Sidebar) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Interactive Community Advocacy Support Card -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Community Consensus</span>
+<span class="px-space-xs py-1 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm">Ward 151 Hub</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Does this issue affect you?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Crowd-verified priority accelerates BBMP dispatch allocation by up to 300%.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="flex items-center justify-center gap-space-xs py-space-sm px-space-sm rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm hover:brightness-110 transition-all shadow-md" id="upvoteBtn" onclick="toggleVote(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+<span id="voteCountText">Support (+42)</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs py-space-sm px-space-sm rounded-xl bg-surface-container text-on-surface-variant font-headline-sm text-headline-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span>Not Affected</span>
+</button>
+</div>
+<!-- Live Citizen Avatar Cluster -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-low bg-primary text-on-primary font-label-sm text-[10px] flex items-center justify-center">AS</div>
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-low bg-tertiary text-on-tertiary font-label-sm text-[10px] flex items-center justify-center">PK</div>
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-low bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center">NM</div>
+<div class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-low bg-surface-container-highest text-on-surface font-label-sm text-[10px] flex items-center justify-center">+39</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">42 residents endorsed</span>
+</div>
+</div>
+<!-- 5-Stage Vertical Resolution Timeline -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Resolution Lifecycle</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard BBMP SLA</span>
+</div>
+<div class="relative flex flex-col gap-space-md pl-4 mt-space-sm">
+<!-- Stage 1: Reported -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-[23px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20 flex items-center justify-center"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">1. Reported</span>
+<span class="font-body-sm text-body-sm text-primary">Active draft / Pending broadcast</span>
+</div>
+</div>
+<!-- Stage 2: Verified -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-[23px] top-1 w-4 h-4 rounded-full bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">2. AI &amp; Citizen Verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cross-referencing 3 reports</span>
+</div>
+</div>
+<!-- Stage 3: Assigned -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-[23px] top-1 w-4 h-4 rounded-full bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">3. Ward Assigned</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Electrical Wing Zone 4</span>
+</div>
+</div>
+<!-- Stage 4: In Progress -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-[23px] top-1 w-4 h-4 rounded-full bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">4. Field Crew Dispatched</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contractor: PowerGrid South</span>
+</div>
+</div>
+<!-- Stage 5: Resolved -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-[23px] top-1 w-4 h-4 rounded-full bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">5. Resolved &amp; Audited</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Closing photolog verification</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Citizen Comments & Field Notes Stream -->
+<div class="bg-surface-container-low rounded-2xl p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Community Notes</h3>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">3 Updates</span>
+</div>
+<div class="space-y-space-sm max-h-64 overflow-y-auto pr-1">
+<!-- Comment 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Priya K. (Resident)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">18 min ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Almost slipped here last night while crossing. The junction is completely pitch black after 7 PM!
+              </p>
+</div>
+<!-- Comment 2: Municipal Dispatch -->
+<div class="p-space-sm rounded-xl bg-surface-container-high border-l-2 border-primary">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-primary font-semibold">BBMP Ward Office 151</span>
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">1 hour ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Telemetry flagged in routine scan. Work order pending evidence submission.
+              </p>
+</div>
+</div>
+<!-- Add Note Input -->
+<div class="relative pt-space-xs">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-xl px-space-md py-space-sm pr-10 focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" placeholder="Add field observation or note..." type="text"/>
+<button class="absolute right-2 top-3 text-primary hover:text-primary-fixed-dim transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SUCCESS STATE OVERLAY / MODAL DISPLAY -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-surface-container-lowest/80 backdrop-blur-xl" id="successModal">
+<div class="bg-surface-container rounded-3xl p-space-xl max-w-xl w-full shadow-[0_24px_64px_rgba(0,0,0,0.8)] border border-primary/30 flex flex-col items-center text-center animate-in fade-in zoom-in duration-300">
+<!-- Glow Success Icon -->
+<div class="relative flex items-center justify-center mb-space-md">
+<div class="absolute w-24 h-24 rounded-full bg-primary/20 blur-xl"></div>
+<div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-primary-container to-tertiary flex items-center justify-center text-on-primary shadow-lg">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm uppercase tracking-wider font-bold mb-space-xs">
+          REPORTED &amp; BROADCASTED
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          Your report is now live and visible to the community!
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-space-xs">
+          Dispatch telemetry has routed the incident to the Bangalore South Electrical Division. Ward inspector has been alerted.
+        </p>
+<!-- Tracking Reference & Priority Score Badges -->
+<div class="w-full grid grid-cols-2 gap-space-md my-space-lg">
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col items-center shadow-inner">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tracking Reference</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold mt-1 tracking-wider">CL-2026-00421</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-2xl flex flex-col items-center shadow-inner">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Live Priority Score</span>
+<div class="flex items-center gap-1 mt-1">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">82</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 100</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col sm:flex-row gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm hover:brightness-110 transition-all shadow-lg" onclick="closeSuccessModal()" type="button">
+            View Live Issue Tracking
+          </button>
+<button class="flex-1 py-space-sm px-space-md rounded-xl bg-surface-container-high text-on-surface font-headline-sm text-headline-sm hover:bg-surface-container-highest transition-colors" onclick="closeSuccessModal()" type="button">
+            Return to Civic Map
+          </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    let currentStep = 1;
+
+    function switchStep(stepNum) {
+      currentStep = stepNum;
+
+      // Hide all step containers
+      document.getElementById('step1Container').classList.add('hidden');
+      document.getElementById('step2Container').classList.add('hidden');
+      document.getElementById('step3Container').classList.add('hidden');
+
+      // Show selected container
+      document.getElementById('step' + stepNum + 'Container').classList.remove('hidden');
+
+      // Update Stepper Trigger styles
+      for (let i = 1; i <= 3; i++) {
+        const tab = document.getElementById('stepTab' + i);
+        const badge = tab.querySelector('.step-badge');
+        const labels = tab.querySelectorAll('span');
+
+        if (i === stepNum) {
+          tab.className = 'group flex items-center gap-space-md text-left p-space-sm rounded-xl transition-all duration-300 bg-surface-container-high/90 shadow-md';
+          badge.className = 'step-badge flex items-center justify-center w-10 h-10 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm shrink-0 shadow-lg';
+          labels[0].className = 'block font-label-sm text-label-sm text-primary uppercase tracking-wider';
+          labels[1].className = 'block font-headline-sm text-headline-sm text-on-surface truncate';
+        } else if (i < stepNum) {
+          tab.className = 'group flex items-center gap-space-md text-left p-space-sm rounded-xl transition-all duration-300 hover:bg-surface-container-high/40';
+          badge.className = 'step-badge flex items-center justify-center w-10 h-10 rounded-xl bg-tertiary-container text-on-tertiary-container font-headline-sm text-headline-sm shrink-0';
+          labels[0].className = 'block font-label-sm text-label-sm text-tertiary uppercase tracking-wider';
+          labels[1].className = 'block font-headline-sm text-headline-sm text-on-surface truncate';
+        } else {
+          tab.className = 'group flex items-center gap-space-md text-left p-space-sm rounded-xl transition-all duration-300 hover:bg-surface-container-high/40';
+          badge.className = 'step-badge flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container-highest text-on-surface-variant font-headline-sm text-headline-sm shrink-0';
+          labels[0].className = 'block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider';
+          labels[1].className = 'block font-headline-sm text-headline-sm text-on-surface-variant truncate';
+        }
+      }
+
+      // Update progress bar width
+      const bar = document.getElementById('stepProgressBar');
+      if (stepNum === 1) bar.style.width = '33.33%';
+      if (stepNum === 2) bar.style.width = '66.66%';
+      if (stepNum === 3) bar.style.width = '100%';
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function selectCategory(el, catName) {
+      document.querySelectorAll('#categorySelector .cat-pill').forEach(btn => {
+        btn.className = 'cat-pill flex items-center gap-space-sm p-space-sm rounded-xl bg-surface-container text-left transition-all hover:bg-surface-container-high';
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const text = btn.querySelector('span:last-child');
+        if (icon) icon.className = 'material-symbols-outlined text-on-surface-variant text-[22px]';
+        if (text) text.className = 'font-label-md text-label-md text-on-surface';
+      });
+
+      el.className = 'cat-pill active flex items-center gap-space-sm p-space-sm rounded-xl bg-primary-container text-on-primary-container text-left transition-all shadow-md';
+      const icon = el.querySelector('.material-symbols-outlined');
+      const text = el.querySelector('span:last-child');
+      if (icon) icon.className = 'material-symbols-outlined text-on-primary-container text-[22px]';
+      if (text) text.className = 'font-label-md text-label-md font-semibold';
+    }
+
+    function selectSeverity(el, level, score) {
+      document.querySelectorAll('#severitySelector .sev-pill').forEach(btn => {
+        btn.className = 'sev-pill p-space-sm rounded-xl bg-surface-container text-left flex flex-col gap-1 transition-all hover:bg-surface-container-high';
+        const label = btn.querySelector('.font-label-md');
+        if (label) label.className = 'font-label-md text-label-md text-on-surface';
+      });
+
+      el.className = 'sev-pill active p-space-sm rounded-xl bg-primary/20 text-on-surface text-left flex flex-col gap-1 transition-all shadow-md';
+      const label = el.querySelector('.font-label-md');
+      if (label) label.className = 'font-label-md text-label-md font-semibold text-primary';
+
+      const scoreEl = document.getElementById('priorityScoreVal');
+      if (scoreEl) scoreEl.innerText = score;
+    }
+
+    function autoLocate() {
+      const coord = document.getElementById('coordDisplay');
+      if (coord) {
+        coord.innerText = '12.9352° N, 77.6245° E (Calibrated GPS)';
+      }
+    }
+
+    let hasSupported = false;
+    function toggleVote(btn) {
+      hasSupported = !hasSupported;
+      const text = document.getElementById('voteCountText');
+      if (hasSupported) {
+        text.innerText = 'Supported (+43)';
+        btn.classList.add('bg-tertiary', 'text-on-tertiary');
+        btn.classList.remove('bg-primary', 'text-on-primary');
+      } else {
+        text.innerText = 'Support (+42)';
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-tertiary', 'text-on-tertiary');
+      }
+    }
+
+    function showConfirmationModal() {
+      document.getElementById('successModal').classList.remove('hidden');
+    }
+
+    function closeSuccessModal() {
+      document.getElementById('successModal').classList.add('hidden');
+    }
+  </script>
+</div></main><aside aria-label="Live Community Updates" class="fixed bottom-20 md:bottom-6 right-6 z-40 max-w-sm hidden sm:flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-surface-container-high/90 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,0,0,0.5)]"><span class="flex h-2.5 w-2.5 relative shrink-0"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span></span><p class="font-body-sm text-body-sm text-on-surface"><strong class="font-label-md text-tertiary">Live Update:</strong> Pot-hole repair on 80ft Road Koramangala verified resolved.</p></aside><nav class="xl:hidden fixed bottom-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl flex items-center justify-around px-space-sm py-space-xs shadow-[0_-4px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-bold"><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-sm text-[10px]">Home</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="civic-map" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-sm text-[10px]">Map</span></a><a aria-current="page" class="-mt-5 flex flex-col items-center justify-center w-12 h-12 rounded-full bg-primary-container shadow-[0_0_16px_rgba(6,182,212,0.4)] text-primary font-bold" data-path="report-an-issue" href="#"><span class="material-symbols-outlined text-[24px]">add</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="community" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-sm text-[10px]">Community</span></a><a class="flex flex-col items-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="user-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-sm text-[10px]">Profile</span></a></nav><footer class="hidden md:block w-full bg-surface-container-lowest py-space-lg"><div class="w-full px-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 CivicLens Municipal Intelligence System. Open Governance Platform.</span><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Civic Guidelines</a><a class="hover:text-primary transition-colors" href="#">Public API</a><a class="hover:text-primary transition-colors" data-path="admin-center" href="#">Municipal Admin</a></div></div></footer></body></html>
